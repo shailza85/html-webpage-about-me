@@ -15,11 +15,37 @@ body {  /*selector/element from page */
     footer{
     background-color: cyan;
     } 
-    
+    body>footer>p {
+        background-color: orange;
+    }
     footer p{
         background-color: pink; /* Descendent selectors: selects every element on the page of the latter name of that is a child of former name*/
     }
-    /* Direct Descendent selectors: selects every element on the page of the latter name of that is a child of former name*/
-    footer>p {
-        background-color: orange;
-    }
+    /* Direct Descendent selectors: selects every element on the page of the latter name of that is a direct child of former name*/
+  
+    /*
+    Class selectors are used to select every element on a page with a given class attribute, regardless of element type. Classes have higjer specificity than element selectors.
+        */
+        .photo {
+            border: 2px solid black;
+        }
+        /* ID selectors: Are used to select the single element with the given ID. IDs have higher specificity tyan class selectors. */
+        #turbines {
+            border: 3px solid red;
+            border-radius: 10px;
+            width: 50%;
+        }
+
+        main > p {
+          font-size: 40px;
+          color: firebrick;
+          font-weight: bolder;
+          text-decoration: underline overline;
+          font-style: italic;
+        }
+        .contact main {
+            background-image: url(../img/Rocky\ mountains.jpg);
+             }
+        .contact .mask {
+            background-color: rgb(50,50,0.5);
+        }
