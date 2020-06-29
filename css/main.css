@@ -7,12 +7,19 @@ body {  /*selector/element from page */
     main {
         background-color: chartreuse;
     }
-    footer{
-    background-color: cyan;
-    } /* Descendent selectors:select every element on the page of the latter name of that is a child of former name*/
+
     p{
         background-color: yellow;
     }
+
+    footer{
+    background-color: cyan;
+    } 
+    
     footer p{
-        background-color: pink;
+        background-color: pink; /* Descendent selectors: selects every element on the page of the latter name of that is a child of former name*/
+    }
+    /* Direct Descendent selectors: selects every element on the page of the latter name of that is a child of former name*/
+    footer>p {
+        background-color: orange;
     }
