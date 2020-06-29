@@ -28,21 +28,52 @@
             </ul>
         </nav>
         </header> 
-        <form action = "">
-            <label for = "name">Please enter your name:</label>
-            <input id ="name" type ="text">
 
+        <!-- Forms are used for submitting data from a user to server.
+        The "action" attribute determines which page the dtat will be sent to.
+        The "method" attribute determines whether the data will be stored in the URL or sent securely.
+        The GET method will store the data in the URL, meaning if the URL is sent to somebody, they will have the same exact page, as their URL will sent the same data to the server as the original request,
+        The POST method will submit the data behind the scenes, so if the URL is copied, nono of the data will be include.-->
+
+        <form action = "contact.html" method ="GET">
+            <label for = "name">Please enter your name:</label>
+            <input id ="name" name="name" type ="text">
+            <!-- The input element is used for several types of form fields including:
+                -basic one line text
+                -checkboxes
+                -radio button
+                -submit button   
+                
+                The id attribute is used to globally identify an element on a page(for CSS/JS) as well as tie it to a label.
+                The name attribute is used to determine what the field'd data will be referred to when it is submitted to the server.                        
+            -->
                 <br/>
             <label for = "name">Please enter your email:</label>
-            <input id ="email" type ="text">
+            <input id ="email" name="email" type ="text">
             
             <br/>
 
+            <label for = "password">Please enter your password:</label>
+            <input id ="password" name="password" type ="password">
+            
+            <br/>
+            <p>Please select you relation:</p>
+            
+            <input id ="coworker" name="relation" value="coworker" type ="radio">
+            <label for = "coworker">Co-worker</label>
+
+            <input id ="exstudent" name="relation" value="exstudent" type ="radio">
+            <label for = "exstudent">Ex-student</label>
+
+            <input id ="other" name="relation" value="other" type ="radio" checked>
+            <label for = "other">Other</label>
+            <br/>
+            
             <label for ="message">Please leave us a message:</label>
-            <textarea id ="textarea" type ="text"></textarea>
+            <textarea id ="textarea" name="message" type ="text"></textarea>
 
             <br/>
-            
+
             <input type ="submit">
         </form>  
               <footer>
