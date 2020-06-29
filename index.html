@@ -28,7 +28,7 @@
             </ul>
         </nav>
         </header>
-                <main>
+        <main>
             <h2>Skills</h2>
             <p>Here are some of my skills:</p>
             <ul><!--Unorderd list-->
@@ -36,10 +36,15 @@
                 <li>CSS3</li>
                 <li>PHP</li>
             </ul>
-            <h2>My Favourite Picture</h2>
+        <!-- Article is a semantic structuring element that implies that the inner content is a self contained article and will make some sense standing on its own-->
+            <article> 
+            <h2>My Favourite Pictures</h2>
+            <p>Below are some of my favourite pictures</p>
+            <section>
+                <h3>Wind turbines</h3>
             <p>
                 I'd like to share with each of you, my favourite picture! It is of an illustration featuring wind turbines. Very cool, check it out below!
-              </p>
+            </p>
               <figure>
                 <img src="img/wind-turbine-illustration.jpg" alt="A blue illustration wind turbines." title="A blue illustration wind turbines.">
                 <figcaption>
@@ -50,13 +55,17 @@
                 </a>
                 </figcaption>
               </figure>
+            </section>
+            </article>
             </main>
               <footer>
                   <h2>Footer</h2>
+                  <div>
                   <p>
-                      &copy; Copyright 2020 TECHCareers;
+                      &copy; <span>Copyright 2020 TECHCareers</span>;
                       All Rights Reserved
                   </p>
+                </div>
               </footer>
         </body>
     
