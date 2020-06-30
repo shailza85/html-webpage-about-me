@@ -30,11 +30,84 @@
         </nav>
         </header> 
         <main>
-        <section>
-            <h3>Demo Equal-Width Two-Column Layout</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit, et odio repudiandae aperiam impedit fugiat molestias. Officiis a distinctio dolores nostrum sequi, cum molestiae saepe et eveniet. Earum, placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit, et odio repudiandae aperiam impedit fugiat molestias. Officiis a distinctio dolores nostrum sequi, cum molestiae saepe et eveniet. Earum, placeat.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit, et odio repudiandae aperiam impedit fugiat molestias. Officiis a distinctio dolores nostrum sequi, cum molestiae saepe et eveniet. Earum, placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit, et odio repudiandae aperiam impedit fugiat molestias. Officiis a distinctio dolores nostrum sequi, cum molestiae saepe et eveniet. Earum, placeat.</p>
-        </section>
+        <!-- Forms are used for submitting data from a user to server.
+        The "action" attribute determines which page the dtat will be sent to.
+        The "method" attribute determines whether the data will be stored in the URL or sent securely.
+        The GET method will store the data in the URL, meaning if the URL is sent to somebody, they will have the same exact page, as their URL will sent the same data to the server as the original request,
+        The POST method will submit the data behind the scenes, so if the URL is copied, nono of the data will be include.-->
+
+        <form action = "contact.html" method ="GET">
+            <label for = "name">Please enter your name:</label>
+            <input id ="name" name="name" type ="text">
+            <!-- The input element is used for several types of form fields including:
+                -basic one line text
+                -checkboxes
+                -radio button
+                -submit button   
+                
+                The id attribute is used to globally identify an element on a page(for CSS/JS) as well as tie it to a label.
+                The name attribute is used to determine what the field'd data will be referred to when it is submitted to the server.                        
+            -->
+                <br />
+            <label for = "name">Please enter your email:</label>
+            <input id ="email" name="email" type ="text">
+            
+            <br />
+
+            <label for = "password">Please enter your password:</label>
+            <input id ="password" name="password" type ="password">
+            
+            <br />
+            <p>Please select you relation:</p>
+            
+            <input id ="coworker" name="relation" value="coworker" type ="radio">
+            <label for = "coworker">Co-worker</label>
+            <input id ="exstudent" name="relation" value="exstudent" type ="radio">
+            <label for = "exstudent">Ex-student</label>
+            <input id ="other" name="relation" value="other" type ="radio" checked>
+            <label for = "other">Other</label>
+            <br />
+
+            <p>Please select all that apply:</p>
+
+            <!-- Checkboxes are like radio buttons, except you can select multiple boxes at one time or no option selected-->
+            
+            <input id ="programming" name="programming" value="programming" type ="checkbox">
+            <label for = "programming">I like programming</label>
+            
+            <input id ="drawing" name="drawing" value="drawing" type ="checkbox">
+            <label for = "drawing">I like drawing</label>
+
+            <input id ="swimming" name="swimming" value="swimming" type ="checkbox">
+            <label for = "swimming">I like swimming</label>
+
+            <br />
+            <!-- Select provides a drop down list and the value selected for option will be passed under the"name" attribute of the parent select.-->
+            <label for= "province">Please select your province:</label>
+            <select name="province" id ="province">
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="YT">Yukon</option>
+            </select>
+
+            <br />
+            <label for ="message">Please leave us a message:</label>
+            <textarea id ="textarea" name="message" type ="text"></textarea>
+
+            <br />
+
+            <input type ="submit">
+        </form>  
     </main>
               <footer>
                   <h2>Footer</h2>

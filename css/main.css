@@ -1,8 +1,8 @@
 body {  /*selector/element from page */
-    background-color: rgb(200, 201, 202);   /*property:value*/
+    background-color: rgb(220, 245, 255);   /*property:value*/
     }
     header,main,footer{
-        background-color: rgb(148, 148, 148);
+        background-color: rgb(190, 225, 250);
     }
     /*main {
         background-color: chartreuse;
@@ -37,10 +37,10 @@ body {  /*selector/element from page */
         }
 
         main > p {
-          font-size: 40px;
+          font-size: 20px;
           color: firebrick;
           font-weight: bolder;
-          text-decoration: underline overline;
+          /*text-decoration: underline overline;*/
           font-style: italic;
         }
         .contact main {
@@ -48,4 +48,29 @@ body {  /*selector/element from page */
              }
         .contact .mask {
             background-color: rgb(50,50,0.5);
+        }
+        .flex {
+            display:flex;
+            justify-content: center;
+        }
+        .magenta, .orange, .lime {
+            display: inline;
+        }
+        .magenta {
+            background-color: magenta;
+            width: 200px;
+            height: 200px;
+           
+        }
+        .orange {
+            background-color: orange;
+            width: 250px;
+            height: 250px;
+           
+        }
+        .lime{
+            background-color: lime;
+            width: 300px;
+            height: 300px;
+           
         }
