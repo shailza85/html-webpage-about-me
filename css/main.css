@@ -1,10 +1,10 @@
 body {  /*selector/element from page */
-    background-color: salmon;   /*property:value*/
+    background-color: rgb(200, 201, 202);   /*property:value*/
     }
-    header {
-        background-color: red;
+    header,main,footer{
+        background-color: rgb(148, 148, 148);
     }
-    main {
+    /*main {
         background-color: chartreuse;
     }
 
@@ -14,7 +14,7 @@ body {  /*selector/element from page */
 
     footer{
     background-color: cyan;
-    } 
+    } */
     body>footer>p {
         background-color: orange;
     }
